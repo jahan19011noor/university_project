@@ -1,0 +1,186 @@
+#myform
+{
+	display: block;
+	font: bold 12px Tahoma;
+	color: rgb(14, 114, 122);
+	text-shadow: 0.5px 0.5px rgba(14, 114, 122, 0.3);
+	margin-top: -10px;
+}
+
+#myform li
+{
+	list-style: none;
+}
+
+#name, #pass, #submit1, h1
+{
+	display: block;
+}
+
+.name h1, .name #imagefeed
+{
+	float: left;
+	margin: 10px 20px 10px 10px;
+}
+
+.name #imagefeed
+{
+	font: normal 12px Tahoma;
+}
+
+.name1 h1
+{
+	margin-bottom: 15px;
+	margin-top: 12px;
+}
+
+.name #image img
+{
+	width: 100%;
+	max-width: 180px;
+	border-radius: 10px;
+}
+.name #image
+{
+	padding: 10px;
+	border: 1px solid white;
+	width: 180px;
+	background: rgba(14, 114, 122, 0.5);
+	border-radius: 10px;
+}
+
+.name #name
+{
+	float: left;
+	width: 150px;
+	margin-left: 50px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.name #firstfeed,
+.name #middlefeed,
+.name #lastfeed,
+.name #userfeed,
+.name #emailfeed,
+.name #rollfeed,
+.name #postfeed,
+.name #regfeed,
+.name #levelfeed,
+.name #deptfeed,
+.name #phonefeed,
+.name #datefeed,
+.name #memfeed
+{
+	width: 150px;
+	font: normal 12px Tahoma;
+	float: left;
+	height: 20px;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.pass #passfeed
+{
+	width: 350px;
+	font: normal 12px Tahoma;
+	float: left;
+	height: 20px;
+	margin-left: 10px;
+	padding: 5px;
+	padding-top: 10px;
+}
+
+#clear
+{
+	margin-top: 65px;
+	width: 1px;
+	height: 1px;
+}
+
+.pass h1
+{
+	float: left;
+	margin: 10px 0px 10px 10px;
+}
+
+.submit1
+{
+	margin: 20px 20px 10px 218px; 
+}
+
+.submit2
+{
+	margin: 10px 20px 10px 0px;
+}
+
+.submit1 #submit1
+{
+	float: left;
+	padding: 5px 10px 5px 10px;
+	font: bold 12px Tahoma;
+	border-radius: 10px
+}
+
+.submit2 #submit2
+{
+	float: left;
+	padding: 5px 10px 5px 10px;
+	font: bold 12px Tahoma;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.submit2 #filefeed
+{
+	float: left;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+
+.img_cap li
+		{
+			margin-left: 146px;
+			width: 150px;
+			height: 40px;
+			border: 10px solid rgba(14, 114, 122, 0.7);
+			border-radius: 5px;
+			margin-top: 30px;
+		}
+		
+		.pass #pass3
+		{
+			float: left;
+			width: 62px;
+			margin: 15px 20px 10px 5px;
+			padding: 6px;
+			border-radius: 5px;
+			box-shadow: 1px 1px #ffffff;
+		}
+		
+		#move
+		{
+			margin-top: 25px;
+		}
+		
+.pass, .name
+{
+	margin-top: 12px;
+}
+
+#feedback
+{
+	margin: 10px 0px 10px 10px;
+}
+
+#filefeed, #passfeed
+{
+	font:normal 12px Tahoma;
+}
+
+#filefeed a, #passfeed a, #imagefeed a
+{
+	text-decoration: underline;
+	color: rgb(14, 114, 122);
+}

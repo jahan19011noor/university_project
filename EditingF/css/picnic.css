@@ -1,0 +1,116 @@
+#main_body
+{
+	display: block;
+	font: bold 12px Tahoma;
+	color: rgb(14, 114, 122);
+	text-shadow: 0.5px 0.5px rgba(14, 114, 122, 0.3);
+}
+
+#link
+{
+	font: bold 12px Tahoma;
+	color: rgb(14, 114, 122);
+	text-shadow: 0.5px 0.5px rgba(14, 114, 122, 0.3);
+	text-decoration: underline;
+}
+
+#bannar
+{
+	width: 478px;
+	padding: 5px;
+	border: 1px solid rgba(14, 114, 122, 0.3);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background: rgba(14, 114, 122, 0.2);
+}
+
+#bannar img
+{
+	width: 100%;
+	max-width: 473px;
+	margin-left: 2px;
+	border-radius: 5px;
+}
+
+#lists li
+{
+	margin-left: 20px;
+}
+
+#about
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#top_three
+{
+	margin-top: 10px;
+	padding: 0px;
+	height: 160px;
+	padding-left: 2px;
+}
+
+#lower_three
+{
+	padding: 0px;
+	height: 40px;
+	padding-left: 0px;
+}
+
+#top_three div, #lower_three div
+{
+	float: left;
+	list-style: none;
+	padding: 3px;
+}
+
+#top_three div
+{
+	width: 156px;
+}
+
+#lower_three div
+{
+	padding-left: 13px;
+	width: 145px;
+	margin-top: -30px;
+	margin-bottom: 5px;
+}
+
+#bottom
+{
+	margin-bottom: -20px;
+}
+
+#lower_three div:not(.last)
+{
+	margin-right: 1px;
+}
+
+#top_three div:not(.last)
+{
+	margin-right: 0px;
+}
+
+#top_three div img
+{
+	width: 100%;
+	max-width: 160px;
+	border-radius: 5px;
+}
+
+#clear
+{
+	height: 10px;
+}
+
+hr
+{
+	display: block;
+	height: 1px;
+    border: 0;
+	border-top: 1px solid rgba(14, 114, 122, 0.3);
+	padding: 0;
+}

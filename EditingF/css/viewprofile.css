@@ -1,0 +1,94 @@
+#myform
+{
+	display: block;
+	font: bold 12px Tahoma;
+	color: rgb(14, 114, 122);
+	text-shadow: 0.5px 0.5px rgba(14, 114, 122, 0.3);
+	margin-top: -10px;
+}
+
+#myform li
+{
+	list-style: none;
+}
+
+.name h1, .name #imagefeed
+{
+	float: left;
+	margin: 10px 20px 10px 10px;
+}
+
+.name #imagefeed
+{
+	font: normal 12px Tahoma;
+}
+
+.name li div
+{
+	margin-top: 15px;
+}
+
+.name1 h1
+{
+	margin-bottom: 15px;
+	margin-top: 12px;
+}
+
+.name #image img
+{
+	width: 100%;
+	max-width: 180px;
+	border-radius: 10px;
+}
+.name #image
+{
+	padding: 10px;
+	border: 1px solid white;
+	width: 180px;
+	background: rgba(14, 114, 122, 0.5);
+	border-radius: 10px;
+}
+
+/*.name #name
+{
+	float: left;
+	width: 150px;
+	margin-left: 50px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}*/
+
+.name #firstfeed,
+.name #middlefeed,
+.name #lastfeed,
+.name #userfeed,
+.name #emailfeed,
+.name #rollfeed,
+.name #regfeed,
+.name #levelfeed,
+.name #deptfeed,
+.name #postfeed,
+.name #phonefeed,
+.name #datefeed,
+.name #memfeed
+{
+	width: 300px;
+	font: normal 12px Tahoma;
+	height: 20px;
+	margin-left: 10px;
+	padding: 5px;
+	padding-top: 10px;
+}
+
+.name
+{
+	margin-top: 15px;
+}
+
+
+
+#feedback
+{
+	margin: 10px 0px 10px 10px;
+}

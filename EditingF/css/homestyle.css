@@ -1,0 +1,81 @@
+#main_body h1
+{
+	margin-bottom: 10px;
+}
+
+#imagefeed1
+{
+	width: 300px;
+	height: 70px;
+	float: left;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+#name3
+{
+	float: left;
+	margin-left: 10px;
+	width: 166px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.submit
+{
+	margin-left: 10px;
+}
+
+#feedbacker
+{
+	display: block;
+	width: 160px;
+	margin-left: 315px;
+	padding-left: 10px;
+}
+
+hr
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#cat_para
+{
+	font: bold 12px Tahoma;
+	margin-bottom: 10px;
+}
+
+#post_para
+{
+	font: normal 12px Tahoma;
+}
+
+#imagediv, #datadiv
+{
+	float: left;
+}
+
+#imager
+{
+	padding: 10px;
+	border: 1px solid white;
+	width: 180px;
+	margin-right: 10px;
+	background: rgba(14, 114, 122, 0.5);
+	border-radius: 10px;
+}
+
+#imager img
+{
+	width: 100%;
+	max-width: 180px;
+	border-radius: 10px;
+}
+
+#datadiv
+{
+	margin-top: 20px;
+}

@@ -1,0 +1,53 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+header, nav, section, article, hgroup, aside, footer
+{
+	display: block;
+}
+
+.clear
+{
+	display: block;
+	clear: both;
+	overflow: none;
+	width: 0;
+	height: 0;
+}
+
+
+body
+{
+	width: 1000px;
+	border: 1px solid #cccccc;
+	margin: 0px auto 0px auto;
+	background: rgb(239, 226, 239);
+}
+
+h1
+{
+	color: rgb(74, 149, 149);
+	text-shadow: 1px solid #cccccc;
+	font: bold 18px Tahoma;
+	margin-bottom: 20px;
+}
+
+.name1, .name
+{
+	list-style: none;
+}
+
+#name
+{
+	border: 1px solid rgba(255, 255, 255, .5);
+	border-radius: 2px 2px 2px 2px;
+	padding: 3px 5px 4px 7px;
+	margin-top: 5px;
+	background: rgb(16, 138, 148);
+	font: bold 12px Tahoma;
+	color: white;
+	box-shadow: 1px 1px 1px rgba(0,0,0, 0.7);
+}

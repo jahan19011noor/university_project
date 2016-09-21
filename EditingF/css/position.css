@@ -1,0 +1,76 @@
+.name #name1
+{
+	float: left;
+	width: 150px;
+	margin-left: 34px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.name #name2
+{
+	float: left;
+	width: 150px;
+	margin-left: 70px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.name #name3
+{
+	float: left;
+	width: 150px;
+	margin-left: 69px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.name #name4
+{
+	float: left;
+	width: 150px;
+	margin-left: 82px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.name #name5
+{
+	float: left;
+	width: 150px;
+	margin-left: 39px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.name #name6
+{
+	float: left;
+	width: 150px;
+	margin-left: 54px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.name #name7
+{
+	float: left;
+	width: 165px;
+	margin-left: 85px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px #ffffff;
+}
+
+.pass .radio
+{
+	margin-top: 10px;
+	margin-left:38px;
+	margin-right: 10px;
+}
