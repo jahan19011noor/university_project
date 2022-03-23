@@ -1,1 +1,99 @@
-<mxfile host="app.diagrams.net" modified="2022-03-23T21:22:29.742Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" version="17.1.2" etag="1rHEBKR91eHy1VaxSwtw" type="github"><diagram id="x6zEGYhc9YZSc5_EpSnH">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-23T21:33:20.639Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" etag="8WJDtF2wmn0mcxXad-1_" version="17.1.2" type="github">
+  <diagram id="x6zEGYhc9YZSc5_EpSnH" name="Page-1">
+    <mxGraphModel dx="946" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_iI0jnVjgGjltqFnrn9s-1" target="_iI0jnVjgGjltqFnrn9s-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-4" value="Request the client&lt;br&gt;to access some&lt;br&gt;resource in a&amp;nbsp;&lt;br&gt;resource server" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_iI0jnVjgGjltqFnrn9s-3">
+          <mxGeometry x="-0.0634" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_iI0jnVjgGjltqFnrn9s-2" target="_iI0jnVjgGjltqFnrn9s-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-7" value="Client creates&lt;br&gt;code verifier string" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_iI0jnVjgGjltqFnrn9s-6">
+          <mxGeometry x="-0.0154" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_iI0jnVjgGjltqFnrn9s-2" target="_iI0jnVjgGjltqFnrn9s-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-13" value="Client sends a request&lt;br&gt;to authorization server&lt;br&gt;with the code challenge" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_iI0jnVjgGjltqFnrn9s-12">
+          <mxGeometry x="-0.375" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-2" value="Client Application" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="305" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_iI0jnVjgGjltqFnrn9s-5" target="_iI0jnVjgGjltqFnrn9s-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-10" value="Client then encrypts&lt;br&gt;the code verifier&lt;br&gt;with SHA256 hashing&lt;br&gt;to produce the code&lt;br&gt;challenge" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_iI0jnVjgGjltqFnrn9s-9">
+          <mxGeometry x="-0.0095" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-5" value="Code Verifier" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="620" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-8" value="Code challenge&amp;nbsp;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="950" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_iI0jnVjgGjltqFnrn9s-11" target="_iI0jnVjgGjltqFnrn9s-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-16" value="User is redirected&lt;br&gt;to the client with&lt;br&gt;Authorization code" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_iI0jnVjgGjltqFnrn9s-15">
+          <mxGeometry x="0.0162" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-11" value="OAuth2 Authorization server" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="305" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-14" value="Client Application" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="610" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_iI0jnVjgGjltqFnrn9s-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="340" as="sourcePoint" />
+            <mxPoint x="360" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="480" />
+              <mxPoint x="520" y="480" />
+              <mxPoint x="360" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-18" value="Client sends HTTP Post request&lt;br&gt;with Authorization code and&amp;nbsp;&lt;br&gt;Code verifier" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_iI0jnVjgGjltqFnrn9s-17">
+          <mxGeometry x="0.0074" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="_iI0jnVjgGjltqFnrn9s-11" target="_iI0jnVjgGjltqFnrn9s-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="370" as="sourcePoint" />
+            <mxPoint x="690" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="335" y="560" />
+              <mxPoint x="700" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_iI0jnVjgGjltqFnrn9s-20" value="OAuth2 server converts code verifier&lt;br&gt;into SHA256 Hash and compares&lt;br&gt;it with pre-stored code challenge.&lt;br&gt;Then provides the client with the&lt;br&gt;access token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_iI0jnVjgGjltqFnrn9s-19">
+          <mxGeometry x="0.0119" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
