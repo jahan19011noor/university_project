@@ -1,1 +1,183 @@
-<mxfile host="app.diagrams.net" modified="2022-05-06T12:26:41.070Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" version="17.4.6" etag="PNBNftUwI_6LJlOCb2W1" type="github"><diagram id="FK4qWMvVcgck_62RvoVN">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-06T14:32:55.076Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="9ovtobRn_XojV4nyCdGM" version="17.4.6" type="github">
+  <diagram id="FK4qWMvVcgck_62RvoVN" name="Page-1">
+    <mxGraphModel dx="1358" dy="1750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-24" value="ModuleData" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="60" width="300" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-25" value="+ standInProgrammes: ArrayList&lt;StandInProgramme&gt;&#xa;+ selectedProgramme: DegreeProgramme&#xa;+ allCoursesInDegree: ArrayList&lt;CourseUnit&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-24">
+          <mxGeometry y="26" width="300" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-24">
+          <mxGeometry y="80" width="300" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-27" value="+ ModuleData():&#xa;+ getModuleData(String): String&#xa;+ getModuleGroupData(String): String&#xa;+ getCourseGroupData(String): String&#xa;+ getCourseUnitData(String): String&#xa;+ turnToPrettyString(String): String&#xa;+ getSelectedProgramme(): DegreeProgramme&#xa;+ getDegeeFromName(String): StandInProgramme&#xa;+ setSelectedProgramme(String): void&#xa;+ fillStandIns(): ArrayList&lt;StandInProgramme&gt;&#xa;+ getProgramme(Int): StandInProgramme&#xa;+ getStandIns(): ArrayList&lt;StandInProgramme&gt;&#xa;+ isKnownCourse(String): boolean&#xa;+ togleCourseByName(String): void&#xa;+ updateCurrentStudyPoints(): void&#xa;+ printStandIns(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-24">
+          <mxGeometry y="90" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-28" value="Abstract Class Module" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="390" width="300" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-29" value="+ name: String&#xa;+ id: String&#xa;+ groupingId: String&#xa;+ neededCredits: Int&#xa;+ currentCredits: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-28">
+          <mxGeometry y="26" width="300" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-28">
+          <mxGeometry y="110" width="300" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-31" value="+ Module():&#xa;+ isDegreeProgramme(): Boolean&#xa;+ isGroupingModule(): Boolean&#xa;+ getName(): String&#xa;+ getId(): String&#xa;+ getGroupId(): String&#xa;+ getNeededCredits(): Int&#xa;+ getCurrentCredits(): Int&#xa;+ setName(String): void&#xa;+ setId(String): void&#xa;+ setGroupId(String): void&#xa;+ setNeededCredits(int): void&#xa;+ setCurrentCredits(int): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-28">
+          <mxGeometry y="120" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-32" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0;exitY=0.321;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="WIc2Jlgi20IoP4apYzEz-37">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="870" y="300" as="sourcePoint" />
+            <mxPoint x="680" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-34" value="GroupingModule" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="70" width="330" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-35" value="+ courses: ArrayList&lt;CourseUnit&gt;&#xa;+ subModules: ArrayList&lt;GroupingModule&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-34">
+          <mxGeometry y="26" width="330" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-34">
+          <mxGeometry y="70" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-37" value="+ GroupingModule(String):&#xa;+ getCourses():ArrayList&lt;CourseUnit&gt;&#xa;+ getSubModules():ArrayList&lt;GroupingModule&gt;&#xa;+ getAllCourses():ArrayList&lt; CourseUnit&gt;&#xa;+ togleCourseByName(String):void&#xa;+ getCourseByName(String): CourseUnit&#xa;+ getSubGroupingModuleByName(String): GroupingModule&#xa;+ updateCurrentCredits(): Int&#xa;+ printGrouping(Int): void&#xa;+ removeDuplicateCourses(String, boolean): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-34">
+          <mxGeometry y="78" width="330" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-38" value="DegreeProgramme" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="370" width="330" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-39" value="+ subModules: ArrayList&lt;GroupingModule&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-38">
+          <mxGeometry y="26" width="330" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-40" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-38">
+          <mxGeometry y="50" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-41" value="+ DegreeProgramme(String, String, String):&#xa;+ DegreeProgramme(StandInProgramme):&#xa;+ getGroupingModuleByName(String): GroupingModule&#xa;+ getCourseByName(String): CourseUnit&#xa;+ updateCurrentCredits():void&#xa;+ togleCourseByName(String): void&#xa;+ printDegree(): void&#xa;+ removeDuplicateCourses(): void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-38">
+          <mxGeometry y="58" width="330" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-42" value="CourseUnit" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="610" width="330" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-43" value="+ name: String&#xa;+ id: String&#xa;+ courseUnitGroupId: String&#xa;+ credits: Int&#xa;+ completed: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-42">
+          <mxGeometry y="26" width="330" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-44" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-42">
+          <mxGeometry y="110" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-45" value="+ CourseUnit():&#xa;+ CourseUnit(String):&#xa;+ getName(): String&#xa;+ getId(): String&#xa;+ getGroupId(): String&#xa;+ getCredits():Int&#xa;+ getCompleted():Boolean&#xa;+ setCompleted(Boolean): void&#xa;+ printCourse(int): void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-42">
+          <mxGeometry y="118" width="330" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-46" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.002;exitY=0.242;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="WIc2Jlgi20IoP4apYzEz-41" target="WIc2Jlgi20IoP4apYzEz-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1010" y="460" as="sourcePoint" />
+            <mxPoint x="820" y="560" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-47" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1010" y="670" as="sourcePoint" />
+            <mxPoint x="820" y="670" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-52" value="PrimaryController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="-340" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-53" value="+ primaryButton: Button&#xa;+ sNumBar: TextField&#xa;+ nameBar: TextField&#xa;+ degreeProgramSelection: ListView&lt;String&gt;&#xa;+ issueText: Label" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-52">
+          <mxGeometry y="26" width="250" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-52">
+          <mxGeometry y="110" width="250" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-55" value="+ switchToSecondary(): void&#xa;+ isInteger(String): Boolean&#xa;+ initialize(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-52">
+          <mxGeometry y="120" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-60" value="Sisu" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="-100" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-61" value="+ dataSetUp: ModuleData&#xa;+ getDataSetUp: ModuleData" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-60">
+          <mxGeometry y="26" width="170" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-62" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-60">
+          <mxGeometry y="70" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-63" value="+ start(Stage): void&#xa;+ setRoot(Stage): void&#xa;+ loadFXML(String): Parent&#xa;+ start(Stage): void&#xa;+ main(String[] args):" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-60">
+          <mxGeometry y="78" width="170" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-64" value="StandInProgramme" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="-270" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-65" value="+ name: String&#xa;+ id: String&#xa;+ groupId: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-64">
+          <mxGeometry y="26" width="280" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-66" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-64">
+          <mxGeometry y="80" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-67" value="+ StandInProgramme(String, String, String):&#xa;+ printStandin():void&#xa;+ getName(String): void&#xa;+ getId():String&#xa;+ getGroupId():String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-64">
+          <mxGeometry y="88" width="280" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-68" value="&lt;b&gt;Abstract Class Application&lt;/b&gt;" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="-200" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-69" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="WIc2Jlgi20IoP4apYzEz-60" target="WIc2Jlgi20IoP4apYzEz-68">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="-50" as="sourcePoint" />
+            <mxPoint x="710" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-70" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WIc2Jlgi20IoP4apYzEz-61" target="WIc2Jlgi20IoP4apYzEz-24">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-30" as="sourcePoint" />
+            <mxPoint x="560" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="305" y="-52" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-71" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="1" target="WIc2Jlgi20IoP4apYzEz-67">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="200" y="60" as="sourcePoint" />
+            <mxPoint x="150" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-56" value="SecondaryController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="-340" width="330" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-57" value="+ secondaryButton: Button&#xa;+ TreeView: TreeView&lt;String&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-56">
+          <mxGeometry y="26" width="330" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-56">
+          <mxGeometry y="60" width="330" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-59" value="+ switchToPrimary(): void&#xa;+ selectItem(): void&#xa;+ updateTreeFromRoot(): void&#xa;+ updateTreeBody(GroupingModule,TreeItem&lt;String&gt;): void&#xa;+ updateTreeLeafs(CourseUnit, TreeItem&lt;String&gt;): void&#xa;+ addDegreeToTree(DegreeProgramme): void&#xa;+ addGroupingModulesToTree(ArrayList&lt;GroupingModule&gt;,TreeItem&lt;String&gt;): void&#xa;+ addCoursesToTree(ArrayList&lt;CourseUnit&gt;, TreeItem&lt;String&gt;): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-56">
+          <mxGeometry y="70" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-72" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.457;exitY=0.995;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="WIc2Jlgi20IoP4apYzEz-55" target="WIc2Jlgi20IoP4apYzEz-61">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="610" y="-50" as="sourcePoint" />
+            <mxPoint x="770" y="-50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="914" y="-52" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-73" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0.417;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="WIc2Jlgi20IoP4apYzEz-59">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="924.25" y="-150.29999999999995" as="sourcePoint" />
+            <mxPoint x="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1288" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
