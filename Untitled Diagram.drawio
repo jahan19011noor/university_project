@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-06T14:32:55.076Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="9ovtobRn_XojV4nyCdGM" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-06T14:39:16.558Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="e1CfqL5c2G9Nqc8_P1ji" version="17.4.6" type="github">
   <diagram id="FK4qWMvVcgck_62RvoVN" name="Page-1">
     <mxGraphModel dx="1358" dy="1750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -148,7 +148,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WIc2Jlgi20IoP4apYzEz-56" value="SecondaryController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1150" y="-340" width="330" height="190" as="geometry" />
+          <mxGeometry x="1150" y="-340" width="330" height="200" as="geometry" />
         </mxCell>
         <mxCell id="WIc2Jlgi20IoP4apYzEz-57" value="+ secondaryButton: Button&#xa;+ TreeView: TreeView&lt;String&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-56">
           <mxGeometry y="26" width="330" height="34" as="geometry" />
@@ -157,7 +157,7 @@
           <mxGeometry y="60" width="330" height="10" as="geometry" />
         </mxCell>
         <mxCell id="WIc2Jlgi20IoP4apYzEz-59" value="+ switchToPrimary(): void&#xa;+ selectItem(): void&#xa;+ updateTreeFromRoot(): void&#xa;+ updateTreeBody(GroupingModule,TreeItem&lt;String&gt;): void&#xa;+ updateTreeLeafs(CourseUnit, TreeItem&lt;String&gt;): void&#xa;+ addDegreeToTree(DegreeProgramme): void&#xa;+ addGroupingModulesToTree(ArrayList&lt;GroupingModule&gt;,TreeItem&lt;String&gt;): void&#xa;+ addCoursesToTree(ArrayList&lt;CourseUnit&gt;, TreeItem&lt;String&gt;): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIc2Jlgi20IoP4apYzEz-56">
-          <mxGeometry y="70" width="330" height="120" as="geometry" />
+          <mxGeometry y="70" width="330" height="130" as="geometry" />
         </mxCell>
         <mxCell id="WIc2Jlgi20IoP4apYzEz-72" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.457;exitY=0.995;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="WIc2Jlgi20IoP4apYzEz-55" target="WIc2Jlgi20IoP4apYzEz-61">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -175,6 +175,12 @@
             <Array as="points">
               <mxPoint x="1288" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIc2Jlgi20IoP4apYzEz-74" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" edge="1" parent="1" target="WIc2Jlgi20IoP4apYzEz-63">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="605" y="390" as="sourcePoint" />
+            <mxPoint x="710" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
